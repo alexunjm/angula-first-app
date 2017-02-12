@@ -14,4 +14,8 @@ export class EnlaceDatosComponent {
     return true;
   }
 
+  onClicked() {
+    alert('funciona!');
+  }
+
 }
