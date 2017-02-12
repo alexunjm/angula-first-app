@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-saludo',
   template: `
     <p>
-      hola!
+      <ng-content></ng-content>
     </p>
   `,
   styles: []
