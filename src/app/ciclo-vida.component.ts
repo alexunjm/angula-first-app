@@ -12,9 +12,9 @@ import { Component
 @Component({
   selector: 'app-ciclo-vida',
   template: `
-    <p>
-      ciclo-vida Works!
-    </p>
+    <ng-content></ng-content>
+    <p #pSaludo>hola, soy alex</p>
+    <p>{{pSaludo.textContent}}</p>
   `,
   styles: []
 })
