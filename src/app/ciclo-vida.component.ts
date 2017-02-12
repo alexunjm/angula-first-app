@@ -8,6 +8,7 @@ import { Component
   , AfterViewChecked
   , OnDestroy
   , ViewChild
+  , ContentChild
 } from '@angular/core';
 
 @Component({
@@ -30,6 +31,7 @@ export class CicloVidaComponent implements
   , OnDestroy {
 
     @ViewChild('pSaludo') saludo: HTMLElement;
+    @ContentChild('cvContent') contenido: HTMLElement;
 
   constructor() { }
 
@@ -44,6 +46,7 @@ export class CicloVidaComponent implements
   }
   ngAfterContentInit() {
     this.log('ngAfterContentInit');
+    console.log(this.contenido);
   }
   ngAfterContentChecked() {
     this.log('ngAfterContentChecked');
