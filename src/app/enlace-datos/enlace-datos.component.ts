@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-enlace-datos',
@@ -9,13 +9,14 @@ export class EnlaceDatosComponent {
 
   stringVar = 'así se pasan datos desde el componente';
   @Input() numberVar: number = 2;
+  @Output() clicked = new EventEmitter<string>();
 
   onTest() {
     return true;
   }
 
   onClicked() {
-    alert('funciona!');
+    this.clicked.emit('Esto funciona!');
   }
 
 }

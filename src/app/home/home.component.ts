@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  innerClick(value: string)  {
+  	alert(value);
+  }
+
 }
