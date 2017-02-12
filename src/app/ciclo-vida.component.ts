@@ -7,6 +7,7 @@ import { Component
   , AfterViewInit
   , AfterViewChecked
   , OnDestroy
+  , ViewChild
 } from '@angular/core';
 
 @Component({
@@ -28,6 +29,8 @@ export class CicloVidaComponent implements
   , AfterViewChecked
   , OnDestroy {
 
+    @ViewChild('pSaludo') saludo: HTMLElement;
+
   constructor() { }
 
   ngOnChanges() {
@@ -47,6 +50,7 @@ export class CicloVidaComponent implements
   }
   ngAfterViewInit() {
     this.log('ngAfterViewInit');
+    console.log(this.saludo);
   }
   ngAfterViewChecked() {
     this.log('ngAfterViewChecked');
