@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SaludoComponent } from './home/saludo.component';
 import { EnlaceDatosComponent } from './enlace-datos/enlace-datos.component';
 import { ModelosComponent } from './enlace-datos/modelos.component';
+import { CicloVidaComponent } from './ciclo-vida.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ModelosComponent } from './enlace-datos/modelos.component';
     HomeComponent,
     SaludoComponent,
     EnlaceDatosComponent,
-    ModelosComponent
+    ModelosComponent,
+    CicloVidaComponent
   ],
   imports: [
     BrowserModule,
