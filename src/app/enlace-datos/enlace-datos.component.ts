@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-enlace-datos',
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class EnlaceDatosComponent {
 
   stringVar = 'así se pasan datos desde el componente';
-  numberVar = 2;
+  @Input() numberVar: number = 2;
 
   onTest() {
     return true;
